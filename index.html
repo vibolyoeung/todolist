@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <title>Todo list</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="container-sm">
+      <div class="row">
+        <h1>Todo list</h1>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="row g-3">
+            <div class="col-auto">
+              <input
+                type="text"
+                class="form-control"
+                id="add-task"
+                placeholder="Add task"
+              />
+            </div>
+            <div class="col-auto">
+              <button type="submit" id="btn-add" class="btn btn-primary mb-3">Add</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Task list</h2>
+          <ul id="task-list" class="list-group">
+            <!-- <li class="list-group-item d-flex justify-content-between align-items-center">
+              <span>task 1</span>
+              <button type="button" class="btn btn-danger btn-sm">Delete</button>
+            </li> -->
+          </ul>
+        </div>
+        <div class="col-md-6">
+            <h2>Tasks Done</h2>
+            <ul id="task-done" class="list-group">
+              <!-- <li class="list-group-item d-flex justify-content-between align-items-center">
+                task 1
+              </li> -->
+            </ul>
+          </div>
+      </div>
+    </div>
+    <script src="js/todo.js"></script>
+  </body>
+</html>
